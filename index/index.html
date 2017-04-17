@@ -9,12 +9,25 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 </head>
 <body>
+	<!--导航-->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
-			<div class="navbar-header">
-				<button type="button" >
-					
+			<div class="navbar-header"><!--导航标题-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><!--第一个data告诉js需要对按钮做什么，第二个data指示要切换到哪一个元素-->
+					<span class="sr-only">切换导航</span><!--（仅供）屏幕阅读器-->
+					<span class="icon-bar"></span><!--面包屑-->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
+				<a class="navbar-brand" href="#">sinian time</a>
+			</div>
+			<div class="navbar-collapse collapse"><!--collapse:响应式折叠栏-->
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>	
 			</div>
 		</div>
 	</nav>
