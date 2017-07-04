@@ -13,24 +13,37 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header"><!--导航标题-->
+				<!--给导航栏添加响应式特性，折叠的内容必须包裹在带有 class .collapse、.navbar-collapse 的 <div> 中-->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><!--第一个data告诉js需要对按钮做什么，第二个data指示要切换到哪一个元素-->
 					<span class="sr-only">切换导航</span><!--（仅供）屏幕阅读器-->
 					<span class="icon-bar"></span><!--面包屑-->
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">sinian time</a>
+				<a class="navbar-brand" href="#">我的猎场</a>
 			</div>
 			<div class="navbar-collapse collapse"><!--collapse:响应式折叠栏-->
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="">综述</a></li><!--导航链接的位置-->
+					<li><a href="">简述</a></li>
+					<li class="dropdown"><!--下拉菜单-->
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">特点<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#feature-tab" data-tab="tab-chorme">chrome</a></li>
+							<li><a href="#feature-tab" data-tab="tab-firefox">firefox</a></li>
+							<li><a href="#feature-ie" data-tab="ie">ie</a></li>
+						</ul>
+					</li>
+					<li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li><!--modal 模状框-->
 				</ul>	
 			</div>
 		</div>
 	</nav>
+
+	<!--广告轮播-->
+	<div id="ad-carousel" class="carousel slide" >
+		
+	</div>
 
 	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
