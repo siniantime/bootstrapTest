@@ -1,29 +1,16 @@
 /*公共样式*/
-.body{
-	font-family: 'Microsoft Yahei';
-}
-.fc{
-	clear: both;
-}
-#ad-carousel{
-	margin-top: 51px;
-}
-#ad-carousel img{
-	max-height: 800px;
-	margin: auto;
-}
-#summary-container{
-	margin: auto;
-	max-width: 1400px;
-}
-#summary-container .col-md-4{
-	margin: 30px 0;
-	text-align: center;
-}
-#summary-container .col-md-4 p{
-	padding:10px 20px;
-}
+body{font-family: 'Microsoft Yahei'; background: #FAFAFA;}
+.bg-white{background-color: #fff;}
+.container{min-width: 1170px;}
+.navbar{margin-bottom: 0}
+.nav li{float: left;}
+#banner{min-width: 1170px;}
+#jineng .wrap {padding: 0 20px; border: 1px solid #ccc; border-radius: 10px;}
+#jineng .wrap .img{width: 130px; padding: 20px 0; background: url(../images/item.png) no-repeat ; background-size: 240%; background-position: -117px -75px ;}
+#jineng .wrap .img:hover{}
 
-#featuer-tab{
-	width: 100%;
+#story .media-body p{padding: 20px;}
+#history .media-body p{padding: 20px;}
+@media screen and (min-width: 768px) {
+	#history .modal-dialog{margin: 200px auto;}
 }
